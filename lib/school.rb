@@ -15,6 +15,8 @@ class School
   end
   
   def sort
-    @roster
+    @roster.each do |grade, students|
+      p students.sort
+    end
   end
 end
